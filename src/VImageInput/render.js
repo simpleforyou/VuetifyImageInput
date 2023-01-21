@@ -182,13 +182,6 @@ export default function(h) {
 					},
 				},
 				[
-					...(this.clearable
-						? [
-							h('MyClearButton'),
-							h('VSpacer'),
-						]
-						: []
-					),
 					...(this.hideActions || this.readonly
 						? []
 						: [
@@ -196,7 +189,14 @@ export default function(h) {
 							h('MyRotateCounterClockwiseButton'),
 							h('MyFlipHorizontallyButton'),
 							h('MyFlipVerticallyButton'),
+							h('VSpacer'),
 						]
+					),
+					...(this.clearable
+							? [
+								h('MyClearButton'),
+							]
+							: []
 					),
 				],
 			),

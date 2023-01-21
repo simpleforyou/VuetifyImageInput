@@ -13,6 +13,6 @@ export default {
 		let {scaledRotatedInternalImageWidthDifference} = this;
 		this.dirtyOriginLeft = scaledRotatedInternalImageWidthDifference
 			? value / scaledRotatedInternalImageWidthDifference
-			: 1/2;
+			: 1 / 2;
 	},
 };

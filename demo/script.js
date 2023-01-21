@@ -1,5 +1,4 @@
 (() => {
-
 	new Vue({
 		el: '#App',
 		vuetify: new Vuetify(),
@@ -42,5 +41,4 @@
 			},
 		},
 	});
-
 })();

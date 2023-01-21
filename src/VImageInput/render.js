@@ -50,11 +50,13 @@ export default function(h) {
 							...(this.internalImageData
 								? (this.disabled || this.readonly
 									? {}
-									: {directives: [{
-										name: 'Claw',
-										arg: 'pan',
-										value: this.onPan,
-									}]}
+									: {
+										directives: [{
+											name: 'Claw',
+											arg: 'pan',
+											value: this.onPan,
+										}],
+									}
 								)
 								: {}
 							),
@@ -167,9 +169,8 @@ export default function(h) {
 				{
 					style: {
 						display: 'flex',
-						flexDirection: 'column',
-						gridColumn: 2,
-						gridRow: 1,
+						gridColumn: 1,
+						gridRow: 2,
 						justifyContent: 'center',
 						...(this.internalImageData
 							? {}
@@ -182,13 +183,6 @@ export default function(h) {
 					},
 				},
 				[
-					...(this.clearable
-						? [
-							h('MyClearButton'),
-							h('VSpacer'),
-						]
-						: []
-					),
 					...(this.hideActions || this.readonly
 						? []
 						: [
@@ -196,7 +190,14 @@ export default function(h) {
 							h('MyRotateCounterClockwiseButton'),
 							h('MyFlipHorizontallyButton'),
 							h('MyFlipVerticallyButton'),
+							h('VSpacer'),
 						]
+					),
+					...(this.clearable
+						? [
+							h('MyClearButton'),
+						]
+						: []
 					),
 				],
 			),
@@ -205,7 +206,7 @@ export default function(h) {
 				{
 					style: {
 						gridColumn: 1,
-						gridRow: 2,
+						gridRow: 3,
 						...(this.internalImageData
 							? {}
 							: {

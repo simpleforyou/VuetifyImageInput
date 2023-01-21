@@ -19,7 +19,7 @@ export default function() {
 	});
 	[
 		'scalingSliderColor',
-	].forEach(propName => {
+	].forEach((propName) => {
 		if ($props[propName] !== undefined) {
 			warn(`[${componentName}]: The property '${propName}' has been removed.`);
 		}

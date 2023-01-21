@@ -1,6 +1,6 @@
 {
 	"name": "vuetify-image-input",
-	"version": "19.2.2",
+	"version": "1.0.1",
 	"description": "Provides basic image editing tools.",
 	"keywords": [
 		"component",
@@ -10,12 +10,12 @@
 		"vuetify"
 	],
 	"license": "MIT",
-	"author": "Sergej Sintschilin <seregpie@gmail.com>",
+	"author": "SimpleForYou>",
 	"files": [
 		"a-la-carte.js"
 	],
 	"main": "index.js",
-	"repository": "github:SeregPie/VuetifyImageInput",
+	"repository": "github:simpleforyou/VuetifyImageInput",
 	"scripts": {
 		"build": "rollup -c",
 		"prepublishOnly": "npm run build",

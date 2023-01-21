@@ -13,6 +13,6 @@ export default {
 		let {scaledRotatedInternalImageHeightDifference} = this;
 		this.dirtyOriginTop = scaledRotatedInternalImageHeightDifference
 			? value / scaledRotatedInternalImageHeightDifference
-			: 1 / 2;
+			: 1/2;
 	},
 };

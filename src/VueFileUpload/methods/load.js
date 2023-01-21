@@ -6,7 +6,7 @@ export default function(file) {
 		this.cancel();
 		let reader = new FileReader();
 		let promise = new Promise((resolve, reject) => {
-			reader.addEventListener('progress', (event) => {
+			reader.addEventListener('progress', event => {
 				let {loaded} = event;
 				this.progress = loaded;
 				this.$emit('progress', {
@@ -49,7 +49,7 @@ export default function(file) {
 			result: null,
 		});
 		return promise;
-	}).catch((error) => {
+	}).catch(error => {
 		Object.assign(this, {
 			error,
 			failed: true,

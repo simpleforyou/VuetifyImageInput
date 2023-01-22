@@ -1,49 +1,5 @@
 # VuetifyImageInput
 
-Provides basic image editing tools.
-
-## demo
-
-[Try it out!](https://seregpie.github.io/VuetifyImageInput/)
-
-## dependencies
-
-- [VueClaw](https://github.com/SeregPie/VueClaw)
-
-## setup
-
-### npm
-
-```shell
-npm i vuetify-image-input
-```
-
----
-
-```javascript
-import VuetifyImageInput from 'vuetify-image-input';
-```
-
-*or*
-
-Use the [treeshaking](https://vuetifyjs.com/features/treeshaking) system.
-
-```javascript
-import VuetifyImageInput from 'vuetify-image-input/a-la-carte';
-```
-
-### browser
-
-```html
-<link
-  href="https://unpkg.com/vuetify@2/dist/vuetify.min.css"
-  rel="stylesheet"
-/>
-<script src="https://unpkg.com/vue@2"></script>
-<script src="https://unpkg.com/vuetify@2/dist/vuetify.min.js"></script>
-<script src="https://unpkg.com/vuetify-image-input"></script>
-```
-
 The component is globally available as `VuetifyImageInput`. If Vue is detected, the component is registered automatically.
 
 ## usage

@@ -167,9 +167,8 @@ export default function(h) {
 				{
 					style: {
 						display: 'flex',
-						flexDirection: 'column',
-						gridColumn: 2,
-						gridRow: 1,
+						gridColumn: 1,
+						gridRow: 2,
 						justifyContent: 'center',
 						...(this.internalImageData
 							? {}
@@ -205,7 +204,7 @@ export default function(h) {
 				{
 					style: {
 						gridColumn: 1,
-						gridRow: 2,
+						gridRow: 3,
 						...(this.internalImageData
 							? {}
 							: {

@@ -1,6 +1,6 @@
 {
 	"name": "vuetify-image-input",
-	"version": "1.0.1",
+	"version": "1.0.4",
 	"description": "Provides basic image editing tools.",
 	"keywords": [
 		"component",
@@ -9,8 +9,7 @@
 		"vue",
 		"vuetify"
 	],
-	"license": "MIT",
-	"author": "SimpleForYou>",
+	"author": "SimpleForYou",
 	"files": [
 		"a-la-carte.js"
 	],

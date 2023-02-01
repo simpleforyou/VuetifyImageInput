@@ -181,15 +181,13 @@ export default function(h) {
 					},
 				},
 				[
-					...(this.hideActions || this.readonly
+					...(this.readonly
 						? []
-						: [
-							h('MyRotateClockwiseButton'),
-							h('MyRotateCounterClockwiseButton'),
-							h('MyFlipHorizontallyButton'),
-							h('MyFlipVerticallyButton'),
-							h('VSpacer'),
-						]
+						: [].concat(this.actionFlipHorizontal ? [h('MyFlipHorizontallyButton')] : [])
+								.concat(this.actionFlipVertical ? [h('MyFlipVerticallyButton')] : [])
+								.concat(this.actionRotateClockwise ? [h('MyRotateClockwiseButton')] : [])
+								.concat(this.actionRotateCounterClockwise ? [h('MyRotateCounterClockwiseButton')] : [])
+								.concat([h('VSpacer')])
 					),
 					...(this.clearable
 							? [
@@ -215,7 +213,7 @@ export default function(h) {
 						),
 					},
 				},
-				(this.hideActions || this.readonly
+				(this.scalingSlider || this.readonly
 					? []
 					: [h('MyScalingSlider')]
 				),

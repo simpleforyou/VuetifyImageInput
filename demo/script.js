@@ -11,7 +11,6 @@
 				fileInfo: null,
 				fullHeight: VuetifyImageInput.props.fullHeight.default,
 				fullWidth: VuetifyImageInput.props.fullWidth.default,
-				hideActions: VuetifyImageInput.props.hideActions.default,
 				image: null,
 				imageHeight: VuetifyImageInput.props.imageHeight.default,
 				imageMinScaling: VuetifyImageInput.props.imageMinScaling.default,

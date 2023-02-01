@@ -11,7 +11,6 @@ import flipVerticallyIcon from './flipVerticallyIcon';
 import flipVerticallyIconStyle from './flipVerticallyIconStyle';
 import fullHeight from './fullHeight';
 import fullWidth from './fullWidth';
-import hideActions from './hideActions';
 import imageBackgroundColor from './imageBackgroundColor';
 import imageFormat from './imageFormat';
 import imageHeight from './imageHeight';
@@ -34,6 +33,12 @@ import successIconStyle from './successIconStyle';
 import uploadIcon from './uploadIcon';
 import uploadIconStyle from './uploadIconStyle';
 import value from './value';
+import actionFlipHorizontal from './actionFlipHorizontal';
+import actionFlipVertical from './actionFlipVertical';
+import actionRotateClockwise from './actionRotateClockwise';
+import actionRotateCounterClockwise from './actionRotateCounterClockwise';
+import scalingSlider from './scalingSlider';
+import accept from './accept';
 
 export default {
 	clearable,
@@ -49,7 +54,12 @@ export default {
 	flipVerticallyIconStyle,
 	fullHeight,
 	fullWidth,
-	hideActions,
+	actionFlipHorizontal,
+	actionFlipVertical,
+	actionRotateClockwise,
+	actionRotateCounterClockwise,
+	accept,
+	scalingSlider,
 	imageBackgroundColor,
 	imageFormat,
 	imageHeight,

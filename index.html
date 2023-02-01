@@ -91,14 +91,6 @@
 				</div>
 				<div class="pa-2">
 					<v-checkbox
-						v-model="hideActions"
-						class="ma-0 pa-0"
-						hide-details
-						label="hide actions"
-					></v-checkbox>
-				</div>
-				<div class="pa-2">
-					<v-checkbox
 						v-model="disabled"
 						class="ma-0 pa-0"
 						hide-details
@@ -165,7 +157,6 @@
 						:disabled="disabled"
 						:full-height="fullHeight"
 						:full-width="fullWidth"
-						:hide-actions="hideActions"
 						:image-height="Number(imageHeight)"
 						:image-min-scaling="imageMinScaling"
 						:image-width="Number(imageWidth)"

@@ -213,7 +213,9 @@ export default function(h) {
 						),
 					},
 				},
-				...(this.readonly ? [] : (this.scalingSlider ? [h('MyScalingSlider')] : [])),
+				[
+					...(this.readonly ? [] : (this.scalingSlider ? [h('MyScalingSlider')] : [])),
+				]
 			),
 		],
 	);

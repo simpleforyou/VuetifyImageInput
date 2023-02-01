@@ -213,10 +213,7 @@ export default function(h) {
 						),
 					},
 				},
-				(this.scalingSlider || this.readonly
-					? []
-					: [h('MyScalingSlider')]
-				),
+				(this.readonly ? [] : (this.scalingSlider ? [h('MyScalingSlider')] : [])),
 			),
 		],
 	);

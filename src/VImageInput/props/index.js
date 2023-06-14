@@ -32,7 +32,7 @@ import successIcon from './successIcon';
 import successIconStyle from './successIconStyle';
 import uploadIcon from './uploadIcon';
 import uploadIconStyle from './uploadIconStyle';
-import value from './value';
+import modelValue from './modelValue';
 import actionFlipHorizontal from './actionFlipHorizontal';
 import actionFlipVertical from './actionFlipVertical';
 import actionRotateClockwise from './actionRotateClockwise';
@@ -81,7 +81,7 @@ export default {
 	successIconStyle,
 	uploadIcon,
 	uploadIconStyle,
-	value,
+	modelValue,
 
 	backgroundColor: {},
 	maxScaling: {},
